@@ -1,10 +1,8 @@
 # 🏎️ BSL Driver: Simulador de Carreira F3 - F1
 
-**Apex Driver** é um simulador de carreira de piloto de Fórmula 1 baseado em texto, onde você gerencia a vida e as decisões de um jovem piloto desde a Fórmula 3 até o auge do automobilismo mundial. O jogo é construído inteiramente com HTML, CSS e JavaScript puro, sem a necessidade de frameworks ou bibliotecas externas.
-
 <div align="center">
   <img src="https://img.icons8.com/?size=100&id=_jtfUqyZM2Pw&format=png&color=000000" alt="Ícone de Carro"/>
-  <p>Gerencie uma carreira automobilistica completa! Evolua de jovem promessa a lenda do esporte, com decisões estratégicas e eventos dinâmicos.</p>
+  <p>**BSL Driver** é um simulador de carreira de piloto de Fórmula 1 baseado em texto, onde você gerencia a vida e as decisões de um jovem piloto desde a Fórmula 3 até o auge do automobilismo mundial. O jogo é construído inteiramente com HTML, CSS e JavaScript puro, sem a necessidade de frameworks ou bibliotecas externas.</p>
   <a href="https://marcus7170.github.io/BSL_Driver/"><strong>🎮 Jogar Agora</strong></a>
 </div>
 
