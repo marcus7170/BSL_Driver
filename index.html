@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏎️ BSL Driver 🏎️</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="background-music" loop></audio>
+    <div id="music-controls">
+        <button id="volume-down-button" title="Diminuir Volume">🔉</button>
+        <button id="mute-button" title="Silenciar">🔇</button>
+        <button id="volume-up-button" title="Aumentar Volume">🔊</button>
+        <button id="skip-track-button" title="Pular Faixa">⏭️</button>
+    </div>
+
+    <div id="game-container">
+        <main id="main-panel">
+            <header>
+                <h1>🏎️ BSL Driver 🏎️</h1>
+                <div id="player-dashboard"></div>
+            </header>
+
+            <div id="action-panel">
+                <div id="race-info"></div>
+                <div class="main-buttons-container">
+                    <button id="advance-button" onclick="advanceToNextRace()">Avançar para Próxima Corrida</button>
+                    <button id="open-shop-button" onclick="openShop()">🛒 Loja</button>
+                </div>
+            </div>
+            
+            <div id="history-panel">
+                <h2>Histórico de Carreira</h2>
+                <div id="history-log"></div>
+            </div>
+        </main>
+
+        <aside id="world-panel">
+            <h2>Campeonato de Pilotos</h2>
+            <div id="championship-standings"></div>
+            
+            <h2>Quadro de Honra</h2>
+            <div id="milestones-log"></div>
+        </aside>
+    </div>
+
+    <div id="event-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="event-title"></h2>
+            <p id="event-text"></p>
+            <div id="event-choices"></div>
+        </div>
+    </div>
+    
+    <div id="shop-modal" class="modal hidden">
+        <div class="modal-content shop-content">
+            <div class="shop-header">
+                <h2 id="shop-title">Loja de Carreira</h2>
+                <button id="close-shop-button" onclick="closeShop()">X</button>
+            </div>
+            <div id="shop-items-container"></div>
+        </div>
+    </div>
+    
+    <div id="achievement-overlay" class="hidden">
+        <div id="achievement-card">
+            <div id="achievement-title"></div>
+            <div id="achievement-subtitle"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://discord.gg/ZFgy6x42ZG" target="_blank">Discord BSL</a>
+            <span>•</span>
+            <a href="https://github.com/marcus7170" target="_blank">GitHub do Desenvolvedor</a>
+        </div>
+        <div class="footer-credits">
+            Fundado em 2022 <span class="divider">|</span> Desenvolvido com 💙 por <span class="signature">Marcus7170</span>
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
