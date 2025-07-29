@@ -62,7 +62,6 @@ Para que o jogo funcione corretamente, os arquivos devem estar organizados da se
 ├── 🎵 music3.mp3
 ├── 🎵 music4.mp3
 ├── 🎵 music5.mp3
-├── 🖼️ image_55a4c1.png (ou sua imagem de fundo)
 └── 🖼️ favicon.ico
 ```
 
