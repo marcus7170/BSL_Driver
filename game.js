@@ -5,7 +5,7 @@ let audioInitialized = false;
 let audioPlayer, volumeUpButton, volumeDownButton, muteButton, skipTrackButton;
 const musicTracks = ['music1.mp3', 'music2.mp3', 'music3.mp3', 'music4.mp3', 'music5.mp3'];
 let currentTrackIndex = Math.floor(Math.random() * musicTracks.length);
-let isModalActive = false; // NOVO: Sinalizador para controlar eventos na tela
+let isModalActive = false; 
 
 document.addEventListener('DOMContentLoaded', () => {
     audioPlayer = document.getElementById('background-music');
@@ -261,10 +261,8 @@ function advanceToNextRace() {
 
     setTimeout(() => {
         if (playerPosition !== 'DNF') {
-            // CORRIGIDO: Vitória agora também conta como pódio
             if (playerPosition <= 3) {
                 player.career.podiums++;
-                // A conquista de pódio é adicionada primeiro, depois trocada pela de vitória se for o caso
                 const milestone = {type: playerPosition === 1 ? 'win' : 'podium', race: trackName, season: world.season};
                 player.milestones.unshift(milestone);
                 
@@ -364,13 +362,13 @@ function acceptOffer(teamName, category, newSalary) {
     initializeNewSeason();
 }
 function triggerRandomEvent() { 
-    if(isModalActive) return; // ALTERADO: Checagem do sinalizador
+    if(isModalActive) return; 
     const event = randomEvents[Math.floor(Math.random() * randomEvents.length)]; 
     showEvent(event); 
 }
 function showEvent(event) {
-    if (isModalActive) return; // ALTERADO: Checagem do sinalizador
-    isModalActive = true;     // ALTERADO: Ativa o sinalizador
+    if (isModalActive) return;
+    isModalActive = true; 
 
     const modal = document.getElementById('event-modal');
     modal.classList.remove('hidden');
@@ -385,15 +383,15 @@ function showEvent(event) {
         button.onclick = () => {
             choice.action();
             modal.classList.add('hidden');
-            isModalActive = false; // ALTERADO: Desativa o sinalizador
+            isModalActive = false;
             updateUI();
         };
         choicesDiv.appendChild(button);
     });
 }
 function showAchievement(title, subtitle, type) {
-    if (isModalActive) return; // ALTERADO: Checagem do sinalizador
-    isModalActive = true;     // ALTERADO: Ativa o sinalizador
+    if (isModalActive) return;
+    isModalActive = true;
 
     const overlay = document.getElementById('achievement-overlay');
     const card = document.getElementById('achievement-card');
@@ -410,10 +408,10 @@ function showAchievement(title, subtitle, type) {
     overlay.classList.remove('hidden');
     setTimeout(() => {
         overlay.classList.add('hidden');
-        isModalActive = false; // ALTERADO: Desativa o sinalizador
+        isModalActive = false;
     }, 1500);
 }
-// ALTERADO: UI atualizada com o contador de títulos de F1
+
 function updateUI() {
     const dashboard = document.getElementById('player-dashboard');
     let f1TitlesHTML = '';
