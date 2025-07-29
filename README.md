@@ -2,8 +2,8 @@
 
 **Apex Driver** é um simulador de carreira de piloto de Fórmula 1 baseado em texto, onde você gerencia a vida e as decisões de um jovem piloto desde a Fórmula 3 até o auge do automobilismo mundial. O jogo é construído inteiramente com HTML, CSS e JavaScript puro, sem a necessidade de frameworks ou bibliotecas externas.
 
-![Gameplay Screenshot](image_55a4c1.png)
-*(Dica: Substitua `image_55a4c1.png` pelo nome do arquivo de uma captura de tela do seu jogo para exibir aqui!)*
+<img width="1270" height="919" alt="image" src="https://github.com/user-attachments/assets/89ca119d-62a6-4b39-9ca8-68f89471b789" />
+
 
 ---
 
