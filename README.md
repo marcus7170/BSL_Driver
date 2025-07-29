@@ -13,7 +13,7 @@
 
 ## 📜 Sobre o Jogo
 
-Em **Apex Driver**, seu objetivo é guiar um piloto novato através dos desafios e glórias do esporte a motor. Cada decisão importa: desde a estratégia para uma corrida até a forma como você lida com a imprensa e gerencia suas finanças.
+Em **BSL Driver**, seu objetivo é guiar um piloto novato através dos desafios e glórias do esporte a motor. Cada decisão importa: desde a estratégia para uma corrida até a forma como você lida com a imprensa e gerencia suas finanças.
 
 Começando na Fórmula 3, seu desempenho, reputação e habilidade determinarão as propostas de contrato que você receberá ao final de cada temporada. Você conseguirá subir para a F2, chegar à sonhada Fórmula 1 e se tornar uma lenda, conquistando múltiplos campeonatos mundiais?
 
@@ -57,7 +57,7 @@ Como este é um projeto puramente front-end, não há necessidade de instalaçã
 Para que o jogo funcione corretamente, os arquivos devem estar organizados da seguinte forma:
 
 ```
-📁 Apex-Driver-Game/
+📁 BSL-Driver-Game/
 ├── 📄 index.html
 ├── 📄 style.css
 ├── 📄 game.js
