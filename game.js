@@ -411,7 +411,7 @@ function showAchievement(title, subtitle, type) {
     setTimeout(() => {
         overlay.classList.add('hidden');
         isModalActive = false; // ALTERADO: Desativa o sinalizador
-    }, 2900);
+    }, 1500);
 }
 // ALTERADO: UI atualizada com o contador de títulos de F1
 function updateUI() {
